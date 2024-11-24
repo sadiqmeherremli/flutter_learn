@@ -26,13 +26,6 @@ class ScaffoldLearn extends StatelessWidget {
        );
   }
 }
-
-
-
-
-
-
-
 class BottomNavigationBarClass {
   static BottomNavigationBar bottomNavigationBar =  BottomNavigationBar(items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home" )

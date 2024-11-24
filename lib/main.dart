@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_3/Flutter_Ders_1hisse/app_bar_learn.dart';
-import 'package:flutter_app_3/Flutter_Ders_1hisse/button_learn.dart';
-import 'package:flutter_app_3/Flutter_Ders_1hisse/container_learn_view.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_app_3/Flutter_Ders_2hisse/custom_widgets_learn.dart';
 
-import 'Flutter_Ders_1hisse/scaffold_learn.dart';
+import 'package:flutter_app_3/Flutter_Ders_2hisse/image_learn.dart';
+import 'package:flutter_app_3/Flutter_Ders_2hisse/indicator_widget_learn.dart';
+import 'package:flutter_app_3/Flutter_Ders_2hisse/list_title_learn.dart';
 
 void main() {
+  // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
   runApp(const MyApp());
 }
 
@@ -16,15 +18,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
+      theme: ThemeData.light().copyWith(
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            systemOverlayStyle: SystemUiOverlayStyle.light,
+            centerTitle: true,
+          ),
+          progressIndicatorTheme: ProgressIndicatorThemeData(
+            color: Colors.amber
+          ),
+          cardTheme: CardTheme(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20)))),
       debugShowCheckedModeBanner: false,
       title: 'Flutter App',
-      theme: ThemeData(
-      
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const AppBarLearn(),
+      home: const ListTitleLearn(),
     );
   }
 }
