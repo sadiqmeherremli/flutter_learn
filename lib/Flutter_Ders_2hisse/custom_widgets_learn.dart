@@ -11,6 +11,7 @@ class CustomWidgetsLearn extends StatelessWidget {
       ),
       body: Center(
         child:  Column(
+          
           children: [
             CustomElevatedButton(
               title: "Next",
@@ -19,10 +20,10 @@ class CustomWidgetsLearn extends StatelessWidget {
               },
             ),
             CustomElevatedButton(
-              title: "Button2",
+              title: "Button2", onPressed: () {  },
             ),
             CustomElevatedButton(
-              title: "Button2",
+              title: "Button2", onPressed: () {  },
             ),
           ],
         ),

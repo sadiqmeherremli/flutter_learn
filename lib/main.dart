@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_app_3/Flutter_Ders_2hisse/column_row_learn.dart';
 import 'package:flutter_app_3/Flutter_Ders_2hisse/custom_widgets_learn.dart';
 
 import 'package:flutter_app_3/Flutter_Ders_2hisse/image_learn.dart';
 import 'package:flutter_app_3/Flutter_Ders_2hisse/indicator_widget_learn.dart';
 import 'package:flutter_app_3/Flutter_Ders_2hisse/list_title_learn.dart';
+import 'package:flutter_app_3/Flutter_Ders_2hisse/stack_widget_learn.dart';
+import 'package:flutter_app_3/Flutter_Ders_hisse3/page_view_widget.dart';
+import 'package:flutter_app_3/Flutter_Ders_hisse3/statefull_life_cycle.dart';
+import 'package:flutter_app_3/Flutter_Ders_hisse3/statefull_widget_learn.dart';
+
+import 'Pages/onboarding_pages.dart';
 
 void main() {
   // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
@@ -33,7 +40,7 @@ class MyApp extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20)))),
       debugShowCheckedModeBanner: false,
       title: 'Flutter App',
-      home: const ListTitleLearn(),
+      home:   OnboardingScreen(),
     );
   }
 }
